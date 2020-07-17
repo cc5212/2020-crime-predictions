@@ -68,7 +68,7 @@ crime.head()
 #Se crean los conjuntos X e Y
 X = crime.drop(['Descript', 'catRes', 'PdDistrict', 'Address','Date', 'Resolution', 'Dates', 'CatResolution', 'dia_num'], axis = 1)
 y = crime["CatResolution"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 X_train.head(10)
 
 #Considerando la gran cantidad de variables categóricas se utiliza un modelo Decision Tree
