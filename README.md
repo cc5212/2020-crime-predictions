@@ -7,8 +7,8 @@ Primero, se utiliza python, con su librería pandas para el pre-procesamiento de
 
 Para esto, se confecciona un modelo acorde al problema y se utiliza un computador intel core i7 8700 3600 Mhz, con 6 núcleos físicos y 12 virtuales. Se obtuvieron las siguientes métricas:
 Tiempo de Pre-procesamiento    : 52 segundos <br>
-Tiempo de computo del modelo   : 10 minutos, 13 segundos
-Accuracy                       : 0,8
+Tiempo de computo del modelo   : 10 minutos, 13 segundos <br>
+Accuracy                       : 0,8 <br>
 
 El proyecto consiste en responder la pregunta: ¿Esto se podría hacer más rápido considerando lo aprendido en este curso?
 Para lo anterior, se pre-procesará la data y se computará el mismo modelo con PySpark
