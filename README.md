@@ -39,7 +39,7 @@ Tiempo de Pre-procesamiento    : 2 segundos <br>
 Tiempo de computo del modelo   : 18 segundos <br>                            
 Accuracy                       :  0,793     <br>
 
-Si se comparan con las métricas obtenidas utilizando pandas para el pre-procesamiento y SKlearn para el computo de los modelos, se obtiene una mejora de un 96% en la rápidez del pre-procesamiento (con respecto a pandas) y una mejora de un 97% de la rapidez de computo con respecto a SKlearn.
+Si se comparan con las métricas obtenidas utilizando pandas para el pre-procesamiento y SKlearn para el computo de los modelos, se obtiene una mejora de un 50% en la rápidez del pre-procesamiento (con respecto a pandas) y una mejora de un 63% de la rapidez de computo con respecto a SKlearn.
 
 # Conclusion
 PySpark disminuye el tiempo de computo del modelo en un 63% con respecto a SkLearn, se mantiene un accuracy similar al de Sklearn. PySpark mantiene un accuracy similar al de Sklearn
