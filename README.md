@@ -1,5 +1,5 @@
 # 2020-crime-predictions
-
+El proyecto busca computar un modelo Decision Tree para predecir la resolución de un crimen utilizando PySpark, y comparar los resultados con los obtenidos con pandas y SKlearn. 
 # Overview
 Se quiere correr un modelo de Aprendizaje Automático (Decision Tree) para predecir crímenes en San Francisco (~870.000 registros).
 
