@@ -1,6 +1,8 @@
 # 2020-crime-predictions
-El proyecto busca computar un modelo Decision Tree para predecir la resolución de un crimen utilizando PySpark, y comparar las métricas de desempeño obtenidas con pandas y SKlearn. 
-# Overview
+El proyecto busca computar un modelo Decision Tree para predecir la resolución de un crimen utilizando PySpark, y comparar las métricas de desempeño obtenidas con pandas y SKlearn.                  
+[Realizado por Braulio Mellado, Jorge toloza y Catalina Villches]
+
+# Overview            
 Se quiere correr un modelo de Aprendizaje Automático (Decision Tree) para predecir crímenes en San Francisco (~870.000 registros).
 
 Primero, se utiliza python, con su librería pandas para el pre-procesamiento de la data, y luego, SKlearn para computar un modelo de machine learning (decision tree). 
@@ -44,5 +46,3 @@ PySpark disminuye el tiempo de computo del modeloen un 97% con respecto a SkLear
 El pre-procesamiento de datos con PySpark es más rapido que con Pandas. Además, no requiere mayor utilización de líneas de código para su implementación.
 Si es que no se dispone de tiempo o computadores con buena capacidad de procesamiento, utilizar Spark puede ayudar a cumplir ciertas tareas, aunque con restricciones en la variedad de herramientas para la implementación de estos modelos, como la customización de los mismos.
 
-# Appendix
-TODO: You can use this for key code snippets that you don't want to clutter the main text.
