@@ -14,7 +14,11 @@ El proyecto consiste en responder la pregunta: ¿Esto se podría hacer más ráp
 Para lo anterior, se pre-procesará la data y se computará el mismo modelo con PySpark
 
 # Data
-TODO: Describe the raw dataset that you considered for your project. Where did it come from? Why was it chosen? What information does it contain? What format was it in? What size was it? How many lines/records? Provide links.
+Contenido                        : Registros de crímenes en San Francisco, US
+Formato                          : Texto separado por comas (.csv) 
+Cantidad de Registros            : 878.050      
+Cantidad de Atributos            : 13. Los principales son la geolocalización, categoría, descripción, día de ocurrencia, hora, fecha y resolución
+
 
 # Methods
 TODO: Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
