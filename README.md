@@ -21,6 +21,17 @@ Cantidad de Atributos            : 10. <br>
 Atributos                        : id, categoría, descripción, día de la semana, distrito, dirección, latitudes, longitudes, fecha, resolución. <br>
 
 # Methods
+Para llevar a cabo el proyecto se utilizó Spark, especificamente su librería ML la cual está diseñada para implementar modelos de Machine Learning. Como, en esencia, se quería ver el impacto en la ejecución debido a un procesamiento de grandes volúmenes de datos, se aprovechó que Spark proveía tal librería para implementar el Decision Tree. La labor entonces, consistía en ocupar las herramientas de Spark y lo visto en el curso, para adaptar el dataset al input que se necesitaba para correr el modelo.
+
+En primera instancia se limpiaron los datos para dejar las variables importantes para el objetivo del proyecto. Se crearon nuevas columnas (como 'day' y 'month') haciendo split en la columna 'fecha'; se filtraron valores y se asignaron etiquetas a diferentes categorías. No hubo mayores problemas en esta sección debido a que tenía una dificultad y ejecución similar a los laboratorios.
+
+Tras ello, se realizó un proceso de One-hot Encoding que transformaba variables categóricas a binarias. En esta sección se presentaron las mayores complicaciones del proyecto debido al desconocimiento de la librería. En esencia, se utilizaron los métodos StringIndexer y VectorAssembler para llevar los datos de cada fila a un 'vector' que mantiene la información, el cual, al aplicarle one-hot Encoding, los codificaba a variables binarias.
+
+Por otra parte, ML introduce el concepto de Pipeline, el cual corresponde a un método que se encarga de encadenar las transformaciones de los datos para mantener la consistencia y poder obtener el dataframe que necesita el clasificador. Por lo que, en esencia, se procesaron los datos de modo que cuadraran con los tipos que exigía el método DecisionTreeClassifier. Más detalles se pueden revisar en en el script [decisionTree.py](https://github.com/cc5212/2020-crime-predictions/blob/master/decisionTree.py).
+
+Finalmente, se implementó el modelo junto con un 'Evaluator' (incluido en la librería) para usar como métrica de precisión y comparar los resultados del proyecto.
+
+
 TODO: Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
 
 # Results
