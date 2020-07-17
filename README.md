@@ -8,8 +8,8 @@ Se quiere correr un modelo de Aprendizaje Automático (Decision Tree) para prede
 Primero, se utiliza python, con su librería pandas para el pre-procesamiento de la data, y luego, SKlearn para computar un modelo de machine learning (decision tree). 
 
 Para esto, se confecciona un modelo acorde al problema y se utiliza un computador intel core i7 8700 3600 Mhz, con 6 núcleos físicos y 12 virtuales. Se obtuvieron las siguientes métricas: <br>
-Tiempo de Pre-procesamiento    : 52 segundos <br>
-Tiempo de computo del modelo   : 10 minutos, 13 segundos <br>
+Tiempo de Pre-procesamiento    : 4 segundos <br>
+Tiempo de computo del modelo   : 49 segundos <br>
 Accuracy                       : 0,8 <br>
 
 El proyecto consiste en responder la pregunta: ¿Esto se podría hacer más rápido considerando lo aprendido en este curso?
@@ -36,13 +36,13 @@ Por lo que, en resumen, se procesaron los datos de modo que cuadraran con los ti
 Se obtuvieron las siguientes métricas utilizando PySpark:
 
 Tiempo de Pre-procesamiento    : 2 segundos <br>
-Tiempo de computo del modelo   :18 segundos <br>                            
+Tiempo de computo del modelo   : 18 segundos <br>                            
 Accuracy                       :  0,793     <br>
 
 Si se comparan con las métricas obtenidas utilizando pandas para el pre-procesamiento y SKlearn para el computo de los modelos, se obtiene una mejora de un 96% en la rápidez del pre-procesamiento (con respecto a pandas) y una mejora de un 97% de la rapidez de computo con respecto a SKlearn.
 
 # Conclusion
-PySpark disminuye el tiempo de computo del modeloen un 97% con respecto a SkLearn, se mantiene un accuracy similar al de Sklearn. PySpark mantiene un accuracy similar al de Sklearn
+PySpark disminuye el tiempo de computo del modelo en un 63% con respecto a SkLearn, se mantiene un accuracy similar al de Sklearn. PySpark mantiene un accuracy similar al de Sklearn
 El pre-procesamiento de datos con PySpark es más rapido que con Pandas. Además, no requiere mayor utilización de líneas de código para su implementación.
 Si es que no se dispone de tiempo o computadores con buena capacidad de procesamiento, utilizar Spark puede ayudar a cumplir ciertas tareas, aunque con restricciones en la variedad de herramientas para la implementación de estos modelos, como la customización de los mismos.
 
