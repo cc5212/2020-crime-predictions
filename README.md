@@ -16,9 +16,9 @@ Para lo anterior, se pre-procesará la data y se computará el mismo modelo con 
 # Data
 Contenido                        : Registros de crímenes en San Francisco, US
 Formato                          : Texto separado por comas (.csv) 
-Cantidad de Registros            : 878.050      
-Cantidad de Atributos            : 13. Los principales son la geolocalización, categoría, descripción, día de ocurrencia, hora, fecha y resolución
-
+Cantidad de Registros            : 878.050, cada registro representa un crímen ocurrido      
+Cantidad de Atributos            : 13. 
+Atributos                        : id, categoría, descripción, día de la semana, distrito, dirección, latitudes, longitudes, fecha, resolución.
 
 # Methods
 TODO: Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
