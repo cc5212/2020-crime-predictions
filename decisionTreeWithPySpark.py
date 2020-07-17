@@ -102,11 +102,11 @@ print("----------------------------")
 # ---------------------------------------- #
 
 # Split dataset in training and testing data
-trainingData, testData = data.randomSplit([0.7, 0.3], seed=2020)
+trainingData, testData = data.randomSplit([0.75, 0.25], seed=2020)
 
 
 # Create initial Decision Tree Model
-dt = DecisionTreeClassifier(featuresCol='features', labelCol='label', maxDepth=3)
+dt = DecisionTreeClassifier(featuresCol='features', labelCol='label', maxDepth=6)
 
 # Fit it
 dtModel = dt.fit(trainingData)
