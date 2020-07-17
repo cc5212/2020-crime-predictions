@@ -72,7 +72,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 X_train.head(10)
 
 #Considerando la gran cantidad de variables categóricas se utiliza un modelo Decision Tree
-clf = tree.DecisionTreeClassifier()
+clf = tree.DecisionTreeClassifier(criterion = 'entropy', max_depth = None, max_features = 4, min_samples_leaf = 8)
 clf = clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 clf.score(X_test, y_test)
